@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('ingredients');
             $table->text('instructions');
+            $table->string('image_path')->nullable();
             $table->integer('like_count')->default(0);
             $table->timestamps();
         });
